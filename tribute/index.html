@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tribute | Hall Homoms</title>
+  <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Roboto" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+	    var i = 0;
+		var txt = "William Henry Gates III (born October 28, 1955) is an American business magnate, investor, author, philanthropist, humanitarian, and principal founder of Microsoft Corporation. Gates is one of the best-known entrepreneurs of the personal computer revolution. Today, he has a net worth of US$91 billion and is the world's richest person alive, according to Forbes."; /* The text */
+		var speed = 100; /* The speed/duration of the effect in milliseconds */
+		
+		function typeWriter() {
+		  if (i < txt.length) {
+		    //document.getElementById("btn").style.display = "none";
+			document.getElementById("text").innerHTML += txt.charAt(i);
+			i++;
+			if(i == txt.length) {
+			  i = 0; 
+			  document.getElementById("text").innerHTML = '';
+			  st
+			}
+			setTimeout(typeWriter, speed);
+		  }
+		}
+	  </script>
+</head>
+	<body onload="typeWriter();">
+	  <article>
+	  <h1>Meet Bill Gates</h1>
+	  <h3>Founder Microsoft Corporation</h3>
+	  <!--<img src="http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Bill-Gates-PNG-Image-500x394.png">
+	  -->
+	  <!--<button id="btn" onclick="typeWriter();">Who is Bill gates? Find Out</button> -->
+	  <p id="text">
+	  </p>
+	  </article>
+      <footer>
+	  All About Bill Gates | <a href="https://www.biography.com/people/bill-gates-9307520" target="_blank">Biography</a> or <a href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank">WikiPedia</a>
+	  </footer>
+	  <p id="credit"> designed by <a href="../portfolio/index.html">Hall Homoms</a></p>
+	</body>
+</html>

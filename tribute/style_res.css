@@ -1,0 +1,57 @@
+/* For All Screens: */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	padding: 10px 5px;
+	border-radius: 2px;
+}
+
+body {
+	margin: 10% auto;
+	text-align: center;
+	height: 90vh;
+	overflow-y: hidden;
+	background-color: #160f2e;
+	position: relative;
+	color: white;
+}
+
+/* For mobile phones: */
+body {
+	width: 50%;
+}
+article {
+	height: 500px;
+}
+
+article > img {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+	height: 197px;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+	body {
+		display: block;
+		width: 40%;
+	}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+	body {
+		
+	}
+	
+	article > img{
+		display: none;
+	}
+}
+
+

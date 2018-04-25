@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+body {
+	margin: 10% auto;
+	width: 70%;
+	text-align: center;
+	background: url("http://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Bill-Gates-PNG-Image-500x394.png") no-repeat right bottom;
+	height: 70vh;
+	overflow: hidden;
+	background-color: #160f2e;
+	position: relative;
+}
+
+a {
+	text-decoration: none;
+	padding: 10px 5px;
+	border-radius: 2px;
+}
+
+article {
+	margin: 0 auto;
+	width: 50%;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.36),0 8px 20px 0 rgba(0,0,0,0.32) !important;
+	padding: 20px;
+}
+
+article, footer, #credit {
+	color: white;
+}
+
+article > h1 {
+	border-bottom: 2px solid #c40205;
+	width: 50%;
+	margin: 0 auto;
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 2px;
+}
+
+article > h3 {
+	font-weight: normal;
+	font-family: 'Roboto', sans-serif;
+}
+
+article > p {
+	text-align: left;
+	font-family: 'Gamja Flower', cursive;
+	font-size: 1.5em;
+}
+
+footer {
+	margin: 30px 10px;
+}
+
+footer > a {
+	background-color: black;
+	color: white;
+}
+
+#credit {
+	position: absolute;
+	bottom: 1px;
+	left: 1px;
+}
+
+#credit > a {
+	background-color: #c40205;
+	color: white;
+}
+
+#credit > a:hover, footer > a:hover {
+	box-shadow: 0 4px 8px 0 rgba(247,288,288,0.16),0 4px 10px 0 rgba(247,288,288,0.12) !important;
+}
+
+#btn {
+	background-color: #c40205;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	margin: 10px;
+	box-shadow: 0 2px 4px 0 rgba(247,288,288,0.16),0 2px 5px 0 rgba(247,288,288,0.12) !important;
+	border-radius: 2px;
+}
+
+
