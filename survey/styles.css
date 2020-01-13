@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	/* background-color: #292826; */
+}
+
+.container {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 2.5rem auto;
+	width: 42%;
+	padding: 5px 20px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #333;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+}
+
+#title {
+	display: flex;
+	padding: 0;
+	margin: 10px;
+	flex-direction: column;
+	font-size: 2rem;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.title a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	flex-grow: 1;
+}
+
+#description {
+	font-size: 1.3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #242826;
+	color: white;
+	padding: 5px 0;
+}
+
+#survey-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-element {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+}
+
+input,
+textarea,
+select,
+button {
+	font-size: 1.2rem;
+}
+
+textarea {
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+input,
+textarea,
+select {
+	border: none;
+	border-bottom: 2px solid #158cba;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline-style: none;
+	box-shadow: none;
+	border-color: transparent;
+	border-bottom: 2px solid #f9d342;
+}
+
+fieldset {
+	border: 2px solid #158cba;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+fieldset label {
+	width: 30%;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+	background-color: red;
+}
+
+button {
+	padding: 7px 0;
+	color: white;
+	background-color: #158cba;
+	border: none;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+button:hover {
+	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: 100%;
+		padding: 5px 8px;
+		margin: 0.2rem auto;
+		font-size: 1rem;
+	}
+
+	.title {
+		width: 90%;
+	}
+}
